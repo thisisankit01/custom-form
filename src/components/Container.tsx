@@ -2,6 +2,7 @@ import React from 'react';
 
 interface ContainerProps {
     children: React.PropsWithChildren<any>
+    className?: string;
 }
 
 const OuterContainer = ({children} : ContainerProps) => {
@@ -14,9 +15,9 @@ const OuterContainer = ({children} : ContainerProps) => {
   )
 }
 
-const InnerContainer = ({children} : ContainerProps) => {
+const InnerContainer = ({children , className} : ContainerProps) => {
     return (
-      <div className='px-4'>
+      <div className={`px-4 ${className}`}>
       {children}
       </div>
     )

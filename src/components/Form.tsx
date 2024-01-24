@@ -14,7 +14,7 @@ const Form = () => {
                  <Header HeadingName={"New Pizza"} formHeading/>
                  <OuterContainer>
                     <Header HeadingName='Pizza Name' mandatory/>
-                    <InnerContainer>
+                    <InnerContainer className='space-y-4'>
                     <StringInput placeholder='Enter Pizza Name'/>
                     <Select text='Select Pizza Type' mandatory/>
                     <DropDown dropDownData={dropDownData}/>
